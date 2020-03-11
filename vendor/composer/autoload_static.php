@@ -314,10 +314,9 @@ class ComposerStaticInit9bde6e2ff6622d7afd7650756f676685
     );
 
     public static $classMap = array (
-        'AddPhoneNumberColumnsToUsersTable' => __DIR__ . '/../..' . '/database/migrations/2020_03_11_084955_add_phone_number_columns_to_users_table.php',
-        'AddPhoneNumberColumsToUserTable' => __DIR__ . '/../..' . '/database/migrations/2020_03_11_084639_add_phone_number_colums_to_user_table.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Films' => __DIR__ . '/../..' . '/app/Films.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
         'App\\Http\\Controllers\\Auth\\LoginController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/LoginController.php',
         'App\\Http\\Controllers\\Auth\\RegisterController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/RegisterController.php',
@@ -344,6 +343,7 @@ class ComposerStaticInit9bde6e2ff6622d7afd7650756f676685
         'Carbon\\Laravel\\ServiceProvider' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Laravel/ServiceProvider.php',
         'Carbon\\Translator' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Translator.php',
         'Carbon\\Upgrade' => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon/Upgrade.php',
+        'CreateFilmsTable' => __DIR__ . '/../..' . '/database/migrations/2020_03_11_095455_create_films_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
         'Cron\\AbstractField' => __DIR__ . '/..' . '/mtdowling/cron-expression/src/Cron/AbstractField.php',
