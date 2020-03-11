@@ -3,23 +3,37 @@
 @section('main_page')
 
 
-    
-    <div class="row justify-content-center " >
-        
-        @foreach($films as $film)
-            
-        <div class="card-columns d-inline-block col-8 " >
-                <div class="card mt-5 mr-3 shadow-lg"   >
-                    <div class="card-img">
-                        <img src="{{$film->photo_src}}" alt="">
-                    </div>
-                </div>
 
 
-               
+    <div class="container text-center">
+        <div class="filters d-inline-flex col-10 text-center shadow-lg">
+            <a href="/category/?category=бойовик">Бойовик</a>
+            <a href="/category/?category=фентезі">Фентезі</a>
+            <a href="/category/?category=історичний">Історичний</a>
+            <a href="/category/?category=документальний">Документальний</a>
+            <a href="/category/?category=ужаси">Ужаси</a>
+            <a href="/category/?category=кримінал">Кримінал</a>
+            <a href="/category/?category=детектив">Детектив</a>
+
 
         </div>
-        @endforeach
     </div>
+    <div class="row">
+
+        <div class="container col-4 mt-5">
+                @foreach($films as $film)
+                <div class="card mt-5 mr-3 shadow-lg text-center">
+                        <div class="card-title" onclick="location.href='/film/{{$film->id}}'">
+                            <h3>{{$film->title}}</h3>
+                        </div>
+                        <div class="card-img">
+                            <img class="img-fluid" src="{{$film->photo_src}}" alt="">
+                        </div>
+                    </div>
+                @endforeach
+        </div>
+    </div>
+
+
 
 @endsection

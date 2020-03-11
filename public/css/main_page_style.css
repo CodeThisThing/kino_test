@@ -1,3 +1,14 @@
 .navbar{
     background-color: black;
 }
+.container{
+    justify-content: center;
+}
+.filters a{
+    margin-right: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+p{
+    font-size: 20px;
+}

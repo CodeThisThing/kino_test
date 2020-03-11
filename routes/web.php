@@ -11,11 +11,19 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/','MainPageController@index');
 
+Route::get('/film/{film_id}','FilmPageController@index');
+Route::get('/category','MainPageController@category_filter');
+Route::get('/favorite','FavoriteFilmController@index');
+Route::post('/addFavorite','FavoriteFilmController@addToFavorite');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/verify/{token}', 'Auth\RegisterController@verify')->name('register.verify');
 
 Route::get('auth/login', 'Auth\AuthController@getLogin');
 Route::post('auth/login', 'Auth\AuthController@postLogin');
@@ -31,3 +39,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

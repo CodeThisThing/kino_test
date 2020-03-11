@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.main_layout')
 
 @section('content')
 <div class="container">
@@ -12,9 +12,11 @@
                         <div class="alert alert-success">
                             {{ session('status') }}
                         </div>
+
                     @endif
 
                     You are logged in!
+                        <button class="btn btn-danger" onclick="location.href='/logout'">Вихід</button>
                 </div>
             </div>
         </div>

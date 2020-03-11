@@ -19,6 +19,7 @@
     "vue": "^2.1.10"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.1",
     "mdbootstrap": "^4.14.0"
   }
 }
