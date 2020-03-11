@@ -73,7 +73,8 @@ class RegisterController extends Controller
 
     protected function create(array $data)
     {
-        return User::create([
+
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'phone'=>$data['phone'],
@@ -82,7 +83,7 @@ class RegisterController extends Controller
             'status' => User::STATUS_INACTIVE,
         ]);
 
-        Mail::to($user->email)->send(new VerifyMail($user));
+        \Mail::to($user->email)->send(new VerifyMail($user));
 
         return $user;
     }

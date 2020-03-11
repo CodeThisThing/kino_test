@@ -11,6 +11,11 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
+    <script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
+
     <title>Kino_test</title>
 </head>
 <header>
@@ -22,24 +27,14 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item ">
                     <a class="nav-link" href="/">Головна <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/favorite">Олюблене</a>
                 </li>
             </ul>
-            <ul class="navbar-nav nav-flex-icons">
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link"><i class="fab fa-instagram"></i></a>
-                </li>
-            </ul>
+
         </div>
         @if (Route::has('login'))
             <div class="top-right links">
@@ -68,11 +63,9 @@
 @yield('film_page')
 @yield('content')
 @yield('favorite_page')
+@yield('profile_change')
 
-<script type="text/javascript" src="{{asset('js/mdb.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/bootstrap.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/popper.min.js')}}"></script>
+
 
 
 </body>

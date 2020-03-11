@@ -43,7 +43,7 @@
                             <div class="col-md-6 col-md-offset-4">
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Запаятати мене
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Запамятати мене
                                     </label>
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
                         <div class="form-group">
                             <div class="col-md-8 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">
-                                   Ввійти
+                                   Увійти
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">

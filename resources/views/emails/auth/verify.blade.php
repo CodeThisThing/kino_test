@@ -1,7 +1,6 @@
 @component('mail::message')
-# Introduction
 
-Будьласка підсвердіть Емейл.
+Будьласка підтвердіть Емейл.
 
 @component('mail::button', ['url' => route('register.verify', ['token' => $user->verify_token])])
     Підтвердити
